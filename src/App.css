@@ -1,0 +1,26 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Full page background */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #0f2027);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+
+}
+
+/* Gradient animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

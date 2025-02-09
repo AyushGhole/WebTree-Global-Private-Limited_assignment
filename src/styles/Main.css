@@ -1,0 +1,61 @@
+/* Full page background with smooth color */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #0f2027);
+  background-size: cover;
+}
+
+/* Profile Card Styling */
+.card {
+  max-width: 450px;
+  height: 230px !important;
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Header */
+.card-header {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px 12px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Button Styling */
+.btn-primary {
+  margin-top: 1.8rem !important;
+  background-color: #ff9800;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #e68900;
+  transform: scale(1.05);
+}
